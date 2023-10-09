@@ -22,10 +22,7 @@ const DigitClock = () => {
         s = s < 10 ? "0" + s : s;
         setCurrentTime (`${h}:${m}:${s} ${amPm}`);
     
-        // if (alarmTime == `${h}:${m} ${amPm}`) {
-        //     ringtone.play();
-        //     ringtone.loop = true;
-        // }
+
     }, 1000);
 
   return (
