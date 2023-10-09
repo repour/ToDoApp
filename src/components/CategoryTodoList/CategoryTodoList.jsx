@@ -17,6 +17,8 @@ const CategoryTodoList = () => {
                     className="mt-6"
                     sx={{
                         display: 'flex',
+                        backgroundColor: '#fffddb'
+
                     }}
                 >
                     <ToggleButton value="All" className="basis-1/3">All ( {allCatTodos} )</ToggleButton>

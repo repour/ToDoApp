@@ -13,14 +13,15 @@ const FilterTodoList = () => {
                 exclusive
                 onChange={(e) => setActiveFilter(e.target.value)}
                 aactivria-label="Platform"
-                className="pt-6"
+                className="mt-6"
                 sx={{
                     display: 'flex',
+                    backgroundColor: '#dbffdb'
                 }}
             >
-                <ToggleButton value="all" sx={{backgroundColor: '#aefdae'}} className="basis-1/3">all ( {allTodos} )</ToggleButton>
-                <ToggleButton value="completed" sx={{backgroundColor: '#aefdae'}} className="basis-1/3">completed ( {allCompletedTodos} )</ToggleButton>
-                <ToggleButton value="pending" sx={{backgroundColor: '#aefdae' }} className="basis-1/3">pending ( {allPendingTodos} )</ToggleButton>
+                <ToggleButton value="all" className="basis-1/3">all ( {allTodos} )</ToggleButton>
+                <ToggleButton value="completed" className="basis-1/3">completed ( {allCompletedTodos} )</ToggleButton>
+                <ToggleButton value="pending" className="basis-1/3">pending ( {allPendingTodos} )</ToggleButton>
             </ToggleButtonGroup>
         </>
     )

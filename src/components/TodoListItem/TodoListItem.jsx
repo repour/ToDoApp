@@ -7,7 +7,7 @@ import { Button, Checkbox } from '@mui/material'
 const TodoListItem = props => {
     const [isEditMode, setIsEditMode] = useState(false)
 
-    const handleTodoItemEdit= () => {
+    const handleTodoItemEdit = () => {
         setIsEditMode(true);
     }
 
@@ -28,10 +28,10 @@ const TodoListItem = props => {
     return (
         <div className='flex p-4 border border-gray-300 rounded-lg'>
             <div className='flex items-center flex-grow gap-x-4'>
-                <Checkbox  label="Label" defaultChecked color="success" checked={props.completed} onChange={() => props.toggle(props.id)}  />
+                <Checkbox label="Label" defaultChecked color="success" checked={props.completed} onChange={() => props.toggle(props.id)} />
                 {
                     isEditMode ?
-                        <EditableInput defaultText={props.text} defaultCat={props.category} onSubmit={updateTodoText} onCancel={cancelTextUpdate}/> :
+                        <EditableInput defaultText={props.text} defaultCat={props.category} onSubmit={updateTodoText} onCancel={cancelTextUpdate} /> :
                         <div className={props.completed ? 'line-through' : ''}>{props.text}</div>
                 }
 
